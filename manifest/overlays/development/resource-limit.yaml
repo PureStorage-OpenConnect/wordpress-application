@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: maven-app-deploy
+  name: wordpress-deployment
 spec:
   template:
     spec:
       containers:
-      - name: maven-app-app
+      - name: wordpress
         resources:
           requests:
             memory: "64Mi"
